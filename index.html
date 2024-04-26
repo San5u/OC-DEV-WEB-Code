@@ -15,21 +15,33 @@
 
 <body> 
     <div class="main-container">
-        <header>
-            <!-- Barre de recherche -->
-            <form action="#" method="get" class="search-form">
-                <input type="text" id="search" name="search" placeholder="Rechercher...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-
-            <!-- Liens "Hébergements" et "Activités" -->
-            <nav>
-                <ul>
-                    <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
-                </ul>
-            </nav>
+        <header class="navbar">
+            <div class="container">
+                <div class="navbar-logo">
+                    <img src="images\logo/Booki.png" alt="Logo Booki">
+                </div>
+                <div class="navbar-search">
+                    <div class="search-bar">
+                        <div class="search-location">
+                            <img src="images\logo/.png" alt="Localisation">
+                        </div>
+                        <div class="search-input">
+                            <span>Marseille, France</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-recherche">
+                    <span>Rechercher</span>
+                </div>
+                <nav class="navbar-links">
+                    <ul>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+            
 
         <main>
             <div class="hebergements-and-populaires">
@@ -43,14 +55,14 @@
                     <div class="hotel-row">
                         <div class="hotel-card">
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Hôtel 1">
-                            <h3 class="hotel-name">Nom de l'hôtel 1</h3>
-                            <p class="hotel-price">Prix à partir de 100€</p>
+                            <h3 class="hotel-name">hôtel du port</h3>
+                            <p class="hotel-price">Prix à partir de 52€</p>
                     <div class="hotel-info">
                         <div class="hotel-rating">
                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                         </div>
                         
@@ -59,14 +71,14 @@
 
                         <div class="hotel-card">
                             <img src="./images/hebergements/annie-spratt.jpg" alt="Hôtel ">
-                            <h3 class="hotel-name">Nom de l'hôtel 1</h3>
-                            <p class="hotel-price">Prix à partir de 100€</p>
+                            <h3 class="hotel-name">hôtel de la mer</h3>
+                            <p class="hotel-price">Prix à partir de 46€</p>
                             <div class="hotel-info">
                                 <div class="hotel-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                                 
@@ -75,14 +87,14 @@
 
                         <div class="hotel-card">
                             <img src="./images/hebergements/marcus-loke.jpg" alt="Hôtel ">
-                            <h3 class="hotel-name">Nom de l'hôtel 1</h3>
-                            <p class="hotel-price">Prix à partir de 100€</p>
+                            <h3 class="hotel-name">Auberge La Cannebière</h3>
+                            <p class="hotel-price">Prix à partir de 25€</p>
                             <div class="hotel-info">
                                 <div class="hotel-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                                 
@@ -94,14 +106,14 @@
                     <div class="hotel-row">
                         <div class="hotel-card">
                             <img src="./images/hebergements/nicate-lee.jpg" alt="Hôtel ">
-                            <h3 class="hotel-name">Nom de l'hôtel 1</h3>
-                            <p class="hotel-price">Prix à partir de 100€</p>
+                            <h3 class="hotel-name">Auberge Le Panier</h3>
+                            <p class="hotel-price">Prix à partir de 23€</p>
                             <div class="hotel-info">
                                 <div class="hotel-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                                 
@@ -109,8 +121,8 @@
                         </div>
                         <div class="hotel-card">
                             <img src="./images/hebergements/reisetopia.jpg" alt="Hôtel ">
-                            <h3 class="hotel-name">Nom de l'hôtel 1</h3>
-                            <p class="hotel-price">Prix à partir de 100€</p>
+                            <h3 class="hotel-name">hôtel Les mouettes</h3>
+                            <p class="hotel-price">Prix à partir de 76€</p>
                             <div class="hotel-info">
                                 <div class="hotel-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -123,9 +135,9 @@
                             </div>
                         </div>
                         <div class="hotel-card">
-                            <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Hôtel ">
-                            <h3 class="hotel-name">Nom de l'hôtel 1</h3>
-                            <p class="hotel-price">Prix à partir de 100€</p>
+                            <img src="./images/hebergements/febrian-zakaria.jpg" alt="Hôtel ">
+                            <h3 class="hotel-name">hôtel chez Amina </h3>
+                            <p class="hotel-price">Prix à partir de 96€</p>
                             <div class="hotel-info">
                                 <div class="hotel-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>

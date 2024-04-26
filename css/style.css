@@ -179,16 +179,16 @@ a {
 .hotel-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Alignement horizontal */
+    justify-content: space-between; 
 }
 
 .hotel-card {
-    width: calc(28.2% - 20px); /* Réduire la largeur de 15% */
+    width: calc(28.2% - 20px); 
     margin-bottom: 20px;
     background-color: #FFFFFF;
     border-radius: 8px;
     padding: 10px;
-    box-sizing: border-box; /* Assurer que la largeur inclut le padding */
+    box-sizing: border-box; 
 }
 
 .hotel-name {
@@ -249,4 +249,92 @@ a {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;}
 
-    
+  
+
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: #ffffff; /* Couleur de fond */
+    box-shadow: 0 00px 00px rgba(0, 0, 0, 50.0); /* Ombre */
+    padding: 040px 0; /* Espacement interne */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 30px; 
+}
+
+.navbar-search {
+    flex: 1; 
+}
+
+.navbar-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.navbar-links li:last-child {
+    margin-right: 0; 
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    color: #0065FC; 
+}
+
+/* Styles pour la barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-location {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 0px 0 0 20px; }
+
+.search-location img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-input {
+    background-color: white; 
+    padding: 10px;
+}
+
+.search-input span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.navbar-recherche {
+    background-color: #0065FC; 
+    padding: 10px;
+    border-radius: 0 10px 10px 0; /* Arrondi sur le coin droit */
+    cursor: pointer;
+}
+
+.navbar-recherche span {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+
+
