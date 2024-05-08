@@ -54,14 +54,14 @@ h2 {
 }
 
 .titre-hebergements {
-    padding: 30px 0 23px 40px;
+    padding: 42px 0 23px 40px;
 }
+
 
 .card {
     background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.2));
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 .card img {
@@ -85,14 +85,17 @@ h2 {
 /************ large devices (DESKTOP) *************/
 @media (min-width:1024px) {
 
+
+
+
     .les-activites {
-       display: flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: stretch;
         align-content: stretch;
-        
+
     }
 
     .activites .card {
@@ -103,18 +106,51 @@ h2 {
     .hotel-row {
 
         background-color: #F2F2F2;
-        border-radius: 25px;
+
         display: flex;
-        
+
+
+
     }
 
 
     .hotel-card {
         background-color: white;
         border-radius: 20px;
-        padding: 5px;
-        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.2));
+        padding: 3px;
+        filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.2));
         width: 33%;
+        margin: 10px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+
+
+        img {
+            width: 100%;
+            height: 125px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+
+
+
+    .hebergements {
+
+        width: 64%;
+    }
+
+
+
+
+
+
+    .footer .h4 {
+        text-align: justify;
+
+
     }
 
     .activites img {
@@ -125,25 +161,32 @@ h2 {
         border-top-right-radius: 15px;
     }
 
+    .activites .card {
+        margin: 15px;
+
+    }
+
+
+
     .partie-activites {
         margin-top: 60px;
     }
-    
+
     .card h4 {
         margin: unset;
         font-weight: 700;
         font-size: 16px;
     }
-    
+
     .activites h4 {
         padding: 20px;
         white-space: nowrap;
     }
-    
+
     .activites h2 {
         margin-bottom: 15px;
     }
-    
+
     .populaires {
 
         background-color: var(--main-bg-color);
@@ -151,25 +194,27 @@ h2 {
         padding: 20px;
         width: 32%;
     }
-    
+
     .populaires-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 41px 25px 26px 25px;
     }
-    
+
     .populaires-cards .card {
         display: flex;
-        margin-top: 33px;
+        margin-top: 40px;
     }
-    
+
+
     .populaires-cards img {
-        width: 33%;
-        height: 136px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        width: 40%;
+        height: 140px;
+        border-radius: 15px 0 0 15px;
+        padding: 5px;
     }
-    
+
     .populaires-cards .card-content {
         width: 67%;
         padding-left: 15px;
@@ -177,26 +222,29 @@ h2 {
         flex-direction: column;
         justify-content: space-between;
         box-sizing: border-box;
+
     }
-    
+
     .populaires-cards .card-title {
         margin-top: 10px;
         margin-bottom: 4px;
     }
-    
+
     .populaires-cards .card-subtitle {
         margin: 0;
     }
-    
+
     .populaires-cards .card-rating {
         margin-bottom: 5px;
     }
-    
+
+    .populaires img {}
+
     .hebergements-and-populaires {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color);
         border-radius: 20px;
@@ -204,12 +252,205 @@ h2 {
         box-sizing: border-box;
     }
 
+    footer h4 {
+
+        text-align: start;
+    }
+
+
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+
+
+    .hotel-name {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .hotel-price {
+        font-size: 14px;
+        color: #000000;
+    }
+
+
+    .logo img {
+        height: 30px;
+
+    }
+
+    /* barre en haut du site */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 112px;
+    }
+
+    /* bouton hebergement et activités */
+
+    nav ul {
+        display: flex;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: unset;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    nav li:hover {
+        border-top: solid 2px #0065FC;
+        cursor: pointer;
+        padding: 40px 30px;
+        color: #0065FC;
+    }
+
+    nav li {
+        border-top: solid 2px transparent;
+        padding: 40px 30px;
+    }
+
+    .menu a {
+        font-weight: 500;
+    }
+
+    /* barre de recherche Marseille,france et rechercher */
+
+    .recherches {
+        margin-bottom: 30px;
+    }
+
+    .formulaire {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 900;
+    }
+
+    .fa-location-dot {
+        border: solid 1px #F2F2F2;
+        border-radius: 15px 0 0 15px;
+        padding: 15px;
+        border-right-style: none;
+        background-color: #F2F2F2;
+        font-size: 17px;
+    }
+
+    .texte-recherche {
+        border: solid 1px#F2F2F2;
+        border-right: none;
+        width: 250px;
+        height: 49px;
+    }
+
+    .bouton-recherche {
+        border: none;
+        border-radius: 0 15px 15px 0;
+        height: 49px;
+        width: 132px;
+        border-left-style: none;
+        background-color: #0065FC;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.13px;
+        text-align: center;
+    }
+
+    /* Les filtres */
+
+    .filtre i {
+        margin: 0 12px 0 20px;
+        font-size: 22px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .boutons-filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre {
+        margin-left: 40px;
+        background-color: white;
+        border-radius: 50px;
+        border: solid 2px #D9D9D9;
+    }
+
+    .filtre p {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+
+    /* Barre information  */
+    .information {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .fa-info {
+        border: solid 1px #F2F2F2;
+        border-radius: 50%;
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    /* bouton afficher plus */
+
+    .afficher-plus {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #0065FC;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+    /************** bas de la page ********************/
+
+    footer {
+        background-color: #F2F2F2;
+        margin-top: 60px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /**************** Medium devices (tablets, less/equal than 1024px) ****************/
@@ -266,6 +507,7 @@ h2 {
 
     .populaires {
         background-color: var(--main-bg-color);
+
     }
 
 
@@ -292,211 +534,4 @@ h2 {
 
 
 
-}
-
-.hotel-card {
-
-    margin-bottom: 20px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    padding: 10px;
-    box-sizing: border-box;
-
-    img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-
-    .populaires-cards {
-        flex-direction: column;
-    }
-
-}
-
-.hotel-name {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.hotel-price {
-    font-size: 14px;
-    color: #000000;
-}
-
-
-.logo img {
-    height: 30px;
-
-}
-
-/* barre en haut du site */
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 112px;
-}
-
-/* bouton hebergement et activités */
-
-nav ul {
-    display: flex;
-}
-
-ul {
-    list-style-type: none;
-    padding: unset;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-nav li:hover {
-    border-top: solid 2px #0065FC;
-    cursor: pointer;
-    padding: 40px 30px;
-    color: #0065FC;
-}
-
-nav li {
-    border-top: solid 2px transparent;
-    padding: 40px 30px;
-}
-
-.menu a {
-    font-weight: 500;
-}
-
-/* barre de recherche Marseille,france et rechercher */
-
-.recherches {
-    margin-bottom: 30px;
-}
-
-.formulaire {
-    display: flex;
-    align-items: center;
-}
-
-.fa-solid,
-.fas {
-    font-weight: 900;
-}
-
-.fa-location-dot {
-    border: solid 1px #F2F2F2;
-    border-radius: 15px 0 0 15px;
-    padding: 15px;
-    border-right-style: none;
-    background-color: #F2F2F2;
-    font-size: 17px;
-}
-
-.texte-recherche {
-    border: solid 1px#F2F2F2;
-    border-right: none;
-    width: 250px;
-    height: 49px;
-}
-
-.bouton-recherche {
-    border: none;
-    border-radius: 0 15px 15px 0;
-    height: 49px;
-    width: 132px;
-    border-left-style: none;
-    background-color: #0065FC;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
-    text-align: center;
-}
-
-/* Les filtres */
-
-.filtre i {
-    margin: 0 12px 0 20px;
-    font-size: 22px;
-}
-
-.filtres {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.boutons-filtres {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.filtre {
-    margin-left: 40px;
-    background-color: white;
-    border-radius: 50px;
-    border: solid 2px #D9D9D9;
-}
-
-.filtre p {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-right: 20px;
-}
-
-/* Barre information  */
-.information {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.fa-info {
-    border: solid 1px #F2F2F2;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 10px;
-    margin-right: 10px;
-}
-
-/* bouton afficher plus */
-
-.afficher-plus {
-    display: block;
-    margin-top: 20px;
-    font-size: 16px;
-    color: #0065FC;
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-/************** bas de la page ********************/
-
-footer {
-    background-color: #F2F2F2;
-    margin-top: 60px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-footer div {
-    width: 200px;
-    height: 200px;
 }
