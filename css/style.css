@@ -52,7 +52,22 @@ h2 {
 }
 
 
+.card-content{
+border-color: #0065FC;
+border: 10px;
+border: solid
+}
+
+ .card
+{
+    border-color: #0065FC;
+    border: 5px;
+    border: solid
+
+}
+
 .card {
+    
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
@@ -96,8 +111,11 @@ h2 {
     }
 
     .activites .card {
+        
         width: 33%;
     }
+
+ 
 
 
     .hotel-row {
@@ -145,7 +163,7 @@ margin-bottom: 2px;
         width: 64%;
     }
 
-
+.dynamictext
 
 
 
@@ -223,9 +241,39 @@ margin-bottom: 2px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        box-sizing: border-box;
+       
 
     }
+
+.populaires-cards .card{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.card-image{
+
+    width: 40%;
+    border: solid 5px #fa3434;
+
+}
+
+.card-image img {
+object-fit: cover;
+width: 100%;
+
+}
+
+.card-content {
+width:60% ;
+
+}
+
+
 
     .populaires-cards .card-title {
         margin-top: 10px;
@@ -274,6 +322,22 @@ margin-bottom: 2px;
         font-size: 14px;
         color: #000000;
     }
+
+    h3 {
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+    }
+
+
+ 
+ .populaires-cards
+ {
+    
+    white-space: nowrap;
+    
+
+ }
 
 
     .logo img {
@@ -420,7 +484,10 @@ margin-bottom: 2px;
         line-height: 20px;
         margin-right: 20px;
     }
-
+    
+    .filtre:hover {
+      background-color: red;
+    }
     /* Barre information  */
     .information {
         display: flex;
