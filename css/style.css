@@ -58,9 +58,7 @@ h2 {
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
 }
 
-.card img {
-    object-fit: cover;
-}
+
 
 .card-title {
     font-size: 16px;
@@ -168,6 +166,7 @@ h2 {
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        
     }
 
     .activites .card {
@@ -246,7 +245,7 @@ h2 {
     .card-image {
 
         width: 30%;
-        
+
 
     }
 
@@ -436,6 +435,11 @@ h2 {
         text-align: center;
     }
 
+    .fa-magnifying-glass{
+
+        display: none;
+    }
+
     /* Les filtres */
 
     .filtre:hover {
@@ -458,9 +462,34 @@ h2 {
     }
 
     .boutons-filtres {
-        display: flex;
-        flex-wrap: wrap;
+       
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
     }
+
+.premier-double-bouton{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.deuxieme-double-bouton{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
 
     .filtre {
         margin-left: 40px;
@@ -533,37 +562,20 @@ h2 {
 /****** Media queries ***********/
 /**************** Medium devices (tablets, less/equal than 1024px) **************************************/
 @media (min-width: 768px) and (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 50%;
-    }
-
-    .populaires {
+    .main-container {
         width: 100%;
-        margin-top: 50px;
-
+        max-width: 1440px;
+        padding: 0 50px;
+        box-sizing: border-box;
     }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .hotel-card:hover,
+    .card:hover {
+
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
     }
 
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
 
     .les-activites {
         display: flex;
@@ -572,18 +584,470 @@ h2 {
         justify-content: space-around;
         align-items: stretch;
         align-content: stretch;
+
     }
 
+    .activites .card {
+
+        width: 22%;
+    }
+
+
+
+
+    .hotel-row {
+
+        background-color: #F2F2F2;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: stretch;
+
+    }
+
+
+    .hotel-card {
+        background-color: white;
+        padding: 5px;
+        filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.2));
+        width: 28%;
+        min-width: 20%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        height: 200px;
+    }
+
+
+    .hotel-card img {
+        width: 100%;
+        height: 125px;
+        object-fit: cover;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+    }
+
+
+    p.hotel-price {
+        margin-bottom: 2px;
+
+    }
+
+    .hebergements {
+       
+        width: 100%;
+    }
+
+    .dynamictext .footer .h4 {
+        text-align: justify;
+
+
+    }
+
+    .activites img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .activites .card {
+        margin: 15px;
+
+    }
+
+
+
+    .partie-activites {
+        margin-top: 60px;
+    }
+
+    .card h4 {
+        margin: unset;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .activites h4 {
+        padding: 20px;
+        
+    }
+
+    .activites h2 {
+        margin-bottom: 15px;
+    }
+/*********************************a changer car probleme***********************************/
+    .populaires {
+        padding: 20px;
+        
+    }
+
+    .populaires-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 15px 10px 25px;
+    }
+
+
+    .populaires-cards .card {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+       
+        align-items: stretch;
+        align-content: stretch;
+       margin: 10px;
+      
+
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .populaires-cards img {
+        width: 40%;
+        height: 150px;
+        border-radius: 20px 0 0 20px;
+        padding: 5px;
+        object-fit: cover;
+
+    }
+
+.card-content{
+
+    width: 60%;
 }
+
+.populaires-cards .card-content {
+       
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+/************************* a changer car probleme******************************/
+
+
+
+
+
+
+
+
+
+
+    .populaires-cards .card-title {
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    .populaires-cards .card-subtitle {
+        margin: 0;
+    }
+
+    .populaires-cards .card-rating {
+        margin-bottom: 5px;
+    }
+
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+margin-bottom: 50px;
+    }
+
+    footer h4 {
+
+        text-align: start;
+    }
+
+
+
+   
+
+
+
+    .hotel-name {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .hotel-price {
+        font-size: 14px;
+        color: #000000;
+    }
+
+    h3 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+
+
+
+    .logo img {
+        height: 25px;
+
+    }
+
+    /* barre en haut du site */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 112px;
+    }
+
+    /* bouton hebergement et activités */
+
+    nav ul {
+        display: flex;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: unset;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    nav li:hover {
+        border-top: solid 2px #0065FC;
+        cursor: pointer;
+        padding: 40px 30px;
+        color: #0065FC;
+    }
+
+    nav li {
+        border-top: solid 2px transparent;
+        padding: 40px 30px;
+    }
+
+    .menu a {
+        font-weight: 500;
+    }
+
+    /* barre de recherche Marseille,france et rechercher */
+
+
+
+
+
+
+    .recherches {
+        margin-bottom: 30px;
+
+    }
+
+
+    .formulaire {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 900;
+    }
+
+    .fa-location-dot {
+        border: solid 1px #F2F2F2;
+        border-radius: 15px 0 0 15px;
+        padding: 15px;
+        border-right-style: none;
+        background-color: #F2F2F2;
+        font-size: 17px;
+    }
+
+    .texte-recherche {
+        font-weight: 700;
+        font-size: large;
+        border: solid 1px#F2F2F2;
+        border-right: none;
+        width: 250px;
+        height: 49px;
+
+    }
+
+    input::placeholder {
+        color: black;
+    }
+
+
+
+    .bouton-recherche {
+        border: none;
+        border-radius: 0 15px 15px 0;
+        height: 49px;
+        width: 132px;
+        border-left-style: none;
+        background-color: #0065FC;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.13px;
+        text-align: center;
+    }
+
+    .fa-magnifying-glass{
+
+        display: none;
+    }
+
+    /* Les filtres */
+
+    .filtre:hover {
+        cursor: default;
+        color: #0065FC;
+
+    }
+
+
+    .filtre i {
+        margin: 0 12px 0 20px;
+        font-size: 22px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .boutons-filtres {
+       
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    }
+
+.premier-double-bouton{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.deuxieme-double-bouton{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+    .filtre {
+        margin-left: 40px;
+        background-color: white;
+        border-radius: 50px;
+        border: solid 2px #D9D9D9;
+    }
+
+    .filtre p {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+
+    .filtre:hover {
+        background-color: #DEEBFF;
+    }
+
+    /* Barre information  */
+    .information {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .fa-info {
+        border: solid 1px #F2F2F2;
+        border-radius: 50%;
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    /* bouton afficher plus */
+
+    .afficher-plus {
+        display: block;
+        margin: 20px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+    /************** bas de la page ********************/
+
+    footer {
+        background-color: #F2F2F2;
+        margin-top: 60px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 200px;
+        height: 200px;
+    }
+  }
 
 /************ Small devices (phones, less than 768px) *******************************************/
 @media (max-width: 768px) {
 
     .main-container {
         width: 100%;
-      
-       
-        
+
+
+
     }
 
 
@@ -591,8 +1055,8 @@ h2 {
     .logo img {
         height: 25px;
         padding-top: 20px;
-        
-	
+
+
     }
 
     .logo {
@@ -606,28 +1070,28 @@ h2 {
 
     }
 
-    
+
     /* bouton hebergement et activités *********/
 
 
-.menu{
+    .menu {
 
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
-   
-}
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+
+    }
 
     nav ul {
         display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
     }
 
     ul {
@@ -642,9 +1106,11 @@ h2 {
 
     nav li:hover {
         border-bottom: solid 2px #0065FC;
-    
+
         padding: 20px 45px;
         color: #0065FC;
+       
+	
     }
 
     nav li {
@@ -659,20 +1125,13 @@ h2 {
         padding-right: 10px;
     }
 
-    p{
-        padding-left: 10px;
-        padding-right: 10px;
-
-    }
-
-
-
+  
     .menu a {
         font-weight: 500;
     }
 
 
-    
+
     /* barre de recherche Marseille,france et rechercher */
 
     .recherches {
@@ -714,72 +1173,84 @@ h2 {
 
     input::placeholder {
         color: black;
-        
+
     }
 
 
 
     .bouton-recherche {
+        display: none;
+       
+    }
+
+    .fa-magnifying-glass {
+       
+        margin-right: 50px;
+        font-size: large;
         border: none;
         border-radius: 15px 15px 15px 15px;
         height: 50px;
         width: 50px;
-        border-left-style: none;
         background-color: #0065FC;
-        color: transparent;
-        
+        color: white;
         font-weight: 700;
-        line-height: 21.13px;
+        line-height: 50px;
         text-align: center;
-        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
-    }
+        filter: drop-shadow(0px 6px 2px rgba(0, 0, 0, 0.2));
 
-   
+    }
+     
+    
+
 
     /************* Les filtres ****************/
 
 
-   
+
 
     .filtre:hover {
         cursor: default;
-        color: #0065FC;
+       
 
     }
+
+
 
 
     .filtre i {
         margin: 0 5px 0 5px;
         font-size: 22px;
-        
+
     }
 
     .filtres {
         display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
         margin-bottom: 10px;
     }
+
 
     .boutons-filtres {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .premier-double-bouton{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
-    padding-bottom: 20px;
+    .premier-double-bouton {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        padding-bottom: 20px;
+        padding-left: 20px;
     }
 
-    .deuxieme-double-bouton{
+    .deuxieme-double-bouton {
 
         display: flex;
         flex-direction: row;
@@ -787,12 +1258,14 @@ h2 {
         justify-content: center;
         align-items: stretch;
         align-content: stretch;
+        padding-left: 20px;
+        padding-bottom: 20px;
 
-
-}
+    }
 
 
     .filtre {
+       
         margin-left: 10px;
         background-color: white;
         border-radius: 50px;
@@ -800,15 +1273,41 @@ h2 {
     }
 
     .filtre p {
+      
         font-size: 15px;
         font-weight: 700;
-        line-height: 0px;
-        
+        line-height: 10px;
+        line-break: auto;
+
     }
 
     .filtre:hover {
         background-color: #DEEBFF;
     }
+
+    .argent{
+        padding: 5px;
+       
+    }
+
+    .famille{
+        padding-right: 50px;
+    
+    
+
+    }
+
+.coeur{
+
+    padding: 5px;
+ 
+}
+
+.chien{
+
+    padding: 5px;
+   
+}
 
     /************** Barre information  *************/
     .information {
@@ -825,16 +1324,16 @@ h2 {
         margin-right: 10px;
     }
 
-/*********** container hébergements a marseille et les plus populaires *********/
+
 
 
     .hebergements-and-populaires {
         display: flex;
-	flex-direction: column-reverse;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
     }
 
 
@@ -847,10 +1346,10 @@ h2 {
 
     .populaires {
         background-color: #F2F2F2;
-       
+
         padding: 20px;
         width: fit-content;
-        
+
     }
 
     .populaires-title {
@@ -898,7 +1397,7 @@ h2 {
     .card-image {
 
         width: 30%;
-        
+
 
     }
 
@@ -928,13 +1427,13 @@ h2 {
         margin-bottom: 5px;
     }
 
-/**************** HEBERGEMENT  **************/
-    H2{
+    /**************** HEBERGEMENT  **************/
+    H2 {
 
         padding: 15px;
     }
 
-    .hebergements{
+    .hebergements {
 
         padding: 20px;
     }
@@ -943,12 +1442,11 @@ h2 {
     .hotel-row {
         display: flex;
         flex-direction: column;
-      
-  
+
+
     }
 
-    
-    
+
     .hotel-card img {
         width: 100%;
         height: 125px;
@@ -957,22 +1455,56 @@ h2 {
         border-top-right-radius: 17px;
     }
 
-.hotel-card{
-    background-color: white;
-    padding: 5px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
-    width: 95%;
-    
-    margin-bottom: 20px;
-    border-radius: 20px;
-    
+    .hotel-card {
+        background-color: white;
+        padding: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+        width: 95%;
+
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+h3.hotel-name{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+
 }
+
+.hotel-rating{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+ /* bouton afficher plus */
+
+ .afficher-plus {
+    display: block;
+    margin: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
 
     .activites img {
         height: 400px;
     }
 
-   
+
 
     .les-activites {
 
@@ -987,7 +1519,7 @@ h2 {
 
 
     .activites img {
-        height: 390px;
+        height: 150px;
         width: 100%;
         object-fit: cover;
         border-top-left-radius: 15px;
@@ -1002,7 +1534,7 @@ h2 {
 
 
     .partie-activites {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .card h4 {
@@ -1030,21 +1562,21 @@ h2 {
 
     footer {
         background-color: #F2F2F2;
-        
-        margin-top: 60px;
- 
+
+        margin-top: 25px;
+
         display: flex;
         flex-wrap: wrap;
-      flex-direction: column;
-     justify-content: space-around;
-      align-items: center;
-        padding: 100px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
     }
 
     footer div {
-        width: 100% ;
+        width: 100%;
         max-width: 300px;
         height: auto;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
 }
