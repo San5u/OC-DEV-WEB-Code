@@ -18,12 +18,12 @@ body {
     justify-content: center;
 }
 
-
-
 a {
     color: inherit;
     text-decoration: none;
 }
+
+
 
 .section-title {
     margin: 0px;
@@ -32,7 +32,10 @@ a {
 
 }
 
+body{
 
+    margin: 0px;
+}
 
 /* titre Hebergments,populaires et activités */
 
@@ -698,10 +701,11 @@ h2 {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-       
+       width: 225px;
         align-items: stretch;
         align-content: stretch;
        margin: 10px;
+       
       
 
     }
@@ -716,11 +720,16 @@ h2 {
     }
 
     .populaires-cards img {
-        width: 40%;
-        height: 150px;
+        width: 100%;
+        height: 125px;
         border-radius: 20px 0 0 20px;
         padding: 5px;
         object-fit: cover;
+
+    }
+
+    .card-image{
+width: 200px;
 
     }
 
@@ -1348,7 +1357,7 @@ margin-bottom: 50px;
         background-color: #F2F2F2;
 
         padding: 20px;
-        width: fit-content;
+        
 
     }
 
@@ -1386,13 +1395,16 @@ margin-bottom: 50px;
 
     .populaires-cards .card {
 
+        
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
     }
+
+    
 
     .card-image {
 
