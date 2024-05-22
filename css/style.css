@@ -702,10 +702,12 @@ h2 {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: flex-start;
        width: 225px;
         align-items: stretch;
         align-content: stretch;
        margin: 10px;
+     
        
       
 
@@ -731,6 +733,7 @@ h2 {
 
     .card-image{
 width: 200px;
+height: 135px;
 
     }
 
@@ -762,14 +765,15 @@ width: 200px;
     .populaires-cards .card-title {
         margin-top: 10px;
         margin-bottom: 4px;
+        margin-left: 10px;
     }
 
     .populaires-cards .card-subtitle {
-        margin: 0;
+        margin: 10px;
     }
 
     .populaires-cards .card-rating {
-        margin-bottom: 5px;
+        margin: 10px;
     }
 
 
@@ -992,10 +996,9 @@ margin-bottom: 50px;
     }
 
     .filtre p {
-        font-size: 17px;
+        
         font-weight: 700;
-        line-height: 20px;
-        margin-right: 20px;
+       padding-right: 10px;
     }
 
     .filtre:hover {
@@ -1144,10 +1147,7 @@ margin-bottom: 50px;
 
     /* barre de recherche Marseille,france et rechercher */
 
-    .recherches {
-        margin-bottom: 60px;
-
-    }
+   
 
 
     .formulaire {
@@ -1217,6 +1217,10 @@ margin-bottom: 50px;
 
 
 
+    H3{
+
+        margin: 20px;
+    }
 
     .filtre:hover {
         cursor: default;
@@ -1246,7 +1250,11 @@ margin-bottom: 50px;
 
     .boutons-filtres {
         display: flex;
-        flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
     }
 
     .premier-double-bouton {
@@ -1370,7 +1378,7 @@ margin-bottom: 50px;
     }
 
     .populaires-cards .card {
-        display: flex;
+        
         margin-top: 25px;
 
     }
@@ -1378,10 +1386,11 @@ margin-bottom: 50px;
 
 
     .populaires-cards img {
-        width: 30%;
+       
         height: 130px;
         border-radius: 20px 0 0 20px;
         padding: 5px;
+       
 
     }
 
@@ -1410,6 +1419,7 @@ margin-bottom: 50px;
     .card-image {
 
         width: 30%;
+        height: 140px
 
 
     }
