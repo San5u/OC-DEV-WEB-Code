@@ -1135,6 +1135,7 @@ width: 90%;
         justify-content: center;
         align-items: stretch;
         align-content: stretch;
+       
     }
 
     ul {
@@ -1147,23 +1148,24 @@ width: 90%;
         padding-inline-start: 0px;
     }
 
-    nav li:hover {
-        border-bottom: solid 2px #0065FC;
-
-        padding: 20px 45px;
-        color: #0065FC;
-
-
-    }
-
-
-
+   
 
     nav li {
+        text-align: center;
+        padding: 20px 80px;
         border-bottom: solid 2px #F2F2F2;
-        padding: 20px 55px;
-
     }
+
+    nav li:hover{
+     
+      border-bottom: solid 2px #0065FC;
+        color: #0065FC;
+     
+       
+    }
+
+
+
 
 
     H1 {
@@ -1368,6 +1370,7 @@ width: 90%;
         display: flex;
         align-items: center;
         margin-bottom: 15px;
+        margin-left: 20px;
     }
 
     .fa-info {
