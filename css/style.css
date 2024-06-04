@@ -49,14 +49,20 @@ body {
 
 h2 {
     line-height: 20px;
-    margin: 0px;
+    margin-top: 15px;
     font-size: 22px;
 }
 
 .titre-hebergements {
-    padding: 30px 0 30px 40px;
+    padding: 20px 0 5px 40px;
 }
 
+.section-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #000000;
+
+}
 
 
 
@@ -94,6 +100,9 @@ h2 {
         box-sizing: border-box;
     }
 
+
+
+
     .hotel-card:hover,
     .card:hover {
 
@@ -114,13 +123,17 @@ h2 {
 
     .activites .card {
 
-        width: 33%;
+        width: 23%;
     }
 
 
+    .euro {
 
+        font-weight: bold;
+    }
 
     .hotel-row {
+        margin-top: 10px;
 
         background-color: #F2F2F2;
         width: 100%;
@@ -142,7 +155,7 @@ h2 {
         min-width: 20%;
         margin-bottom: 20px;
         border-radius: 20px;
-        height: 190px;
+        height: 197px;
 
 
     }
@@ -157,8 +170,9 @@ h2 {
     }
 
     .hotel-rating {
+        padding-top: 5px;
         margin: 10px;
-        font-size: larger;
+        font-size: large;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -176,6 +190,8 @@ h2 {
 
     }
 
+
+
     .hebergements {
 
         width: 64%;
@@ -188,7 +204,7 @@ h2 {
     }
 
     .activites img {
-        height: 390px;
+        height: 377px;
         width: 100%;
         object-fit: cover;
         border-top-left-radius: 15px;
@@ -220,6 +236,13 @@ h2 {
 
     .activites h2 {
         margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    .activites {
+        margin-top: 76px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .populaires {
@@ -231,7 +254,7 @@ h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 15px 10px 25px;
+        margin: 10px 10px 10px 10px;
     }
 
     .populaires-cards .card {
@@ -244,7 +267,7 @@ h2 {
 
     .populaires-cards img {
 
-        height: 130px;
+        height: 135px;
         border-radius: 20px 0 0 20px;
         padding: 5px;
 
@@ -260,7 +283,11 @@ h2 {
     }
 
     .populaires-cards .card {
-
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 146px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -290,13 +317,21 @@ h2 {
 
 
     .populaires-cards .card-title {
-        margin-top: 10px;
+
+        margin-top: 15px;
         margin-bottom: 4px;
 
     }
 
+    .card-txt {
+
+        width: 90%
+    }
+
     .populaires-cards .card-subtitle {
-        margin: 0;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     .populaires-cards .card-rating {
@@ -313,19 +348,21 @@ h2 {
     .hebergements-and-populaires {
         display: flex;
         justify-content: space-between;
+
     }
 
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color);
         border-radius: 20px;
+        padding-bottom: 0px;
 
     }
 
     footer h4 {
+        margin-top: 16px;
+        margin-bottom: 0;
 
-
-
-        font-size: larger;
+        font-size: 19px;
     }
 
 
@@ -340,7 +377,7 @@ h2 {
         font-size: 17px;
         margin-top: 5px;
         margin-left: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
     }
 
     .hotel-price {
@@ -350,7 +387,7 @@ h2 {
 
     h3 {
         overflow: hidden;
-        white-space: nowrap;
+        white-space: wrap;
         text-overflow: ellipsis;
     }
 
@@ -366,7 +403,7 @@ h2 {
 
     .logo img {
         height: 20px;
-
+        margin-top: 30px;
     }
 
     /* barre en haut du site */
@@ -378,6 +415,13 @@ h2 {
         align-items: center;
 
     }
+
+    .texte-accueil {
+
+        padding-top: 40px;
+    }
+
+
 
     /* bouton hebergement et activités */
 
@@ -429,7 +473,7 @@ h2 {
 
 
     .recherches {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
     }
 
@@ -442,6 +486,7 @@ h2 {
     .fa-solid,
     .fas {
         font-weight: 900;
+        margin: 1px;
     }
 
     .fa-location-dot {
@@ -567,10 +612,10 @@ h2 {
     }
 
     .fa-info {
-        border: solid 1px #F2F2F2;
+        border: solid 2px #F2F2F2;
         border-radius: 50%;
-        padding: 5px 10px;
-        font-size: 10px;
+        padding: 5px 9px;
+        font-size: 12px;
         margin-right: 10px;
     }
 
@@ -581,7 +626,7 @@ h2 {
         margin-left: 30px;
         margin-top: 10px;
         font-size: 18px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-weight: 600;
     }
 
@@ -595,9 +640,9 @@ h2 {
 
     footer {
         background-color: #F2F2F2;
-        margin-top: 60px;
-        padding-left: 30px;
-        padding-right: 30px;
+        margin-top: 50px;
+        padding-left: 20px;
+
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -608,7 +653,7 @@ h2 {
 
     footer div {
         width: 200px;
-        height: 200px;
+
     }
 
     .apropos {
@@ -623,7 +668,11 @@ h2 {
 
     }
 
-
+    footer li {
+        white-space: nowrap;
+        margin-top: 15px;
+        font-size: 17px;
+    }
 
 }
 
