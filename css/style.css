@@ -212,6 +212,13 @@ h2 {
 
     }
 
+    .titre-partie-activites {
+
+        margin-left: 35px;
+        margin-bottom: 10px;
+    }
+
+
     .activites .card {
         margin: 15px;
 
@@ -231,7 +238,7 @@ h2 {
 
     .activites h4 {
         padding: 20px;
-        white-space: nowrap;
+
     }
 
     .activites h2 {
@@ -240,7 +247,7 @@ h2 {
     }
 
     .activites {
-        margin-top: 76px;
+
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -257,11 +264,7 @@ h2 {
         margin: 10px 10px 10px 10px;
     }
 
-    .populaires-cards .card {
 
-        margin-top: 20px;
-
-    }
 
 
 
@@ -283,6 +286,7 @@ h2 {
     }
 
     .populaires-cards .card {
+
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 10px;
@@ -427,10 +431,12 @@ h2 {
 
     nav ul {
         display: flex;
+        margin: 0px;
     }
 
-    ul {
 
+
+    ul {
 
         list-style-type: none;
         padding: unset;
@@ -444,23 +450,19 @@ h2 {
     nav li:hover {
         border-top: solid 2px #0065FC;
         cursor: pointer;
-        padding-top: 0px;
-
-        padding-inline-start: 70px;
-
         color: #0065FC;
 
     }
 
     nav li {
         border-top: solid 2px transparent;
-        padding-left: 0px;
-
-        padding-inline-start: 70px;
+        margin-left: 60px;
+        line-height: 55px;
     }
 
     .menu a {
         font-weight: 500;
+        display: flex;
     }
 
 
@@ -652,21 +654,10 @@ h2 {
     }
 
     footer div {
-        width: 200px;
-
+        width: 100%
     }
 
-    .apropos {
 
-
-        padding-right: 250px;
-    }
-
-    .noshebergements {
-
-        padding-right: 250px;
-
-    }
 
     footer li {
         white-space: nowrap;
@@ -723,6 +714,13 @@ h2 {
         justify-content: space-evenly;
         align-items: stretch;
         align-content: stretch;
+        padding-top: 10px;
+
+    }
+
+    .toto {
+        width: 33%;
+        height: 150px;
 
     }
 
@@ -730,18 +728,18 @@ h2 {
     .hotel-card {
         background-color: white;
         padding: 5px;
-        filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
         width: 28%;
         min-width: 20%;
         margin-bottom: 20px;
         border-radius: 20px;
-        height: 200px;
+        height: 195px;
     }
 
 
     .hotel-card img {
         width: 100%;
-        height: 125px;
+        height: 110px;
         object-fit: cover;
         border-top-left-radius: 17px;
         border-top-right-radius: 17px;
@@ -750,7 +748,8 @@ h2 {
 
     p.hotel-price {
         margin-bottom: 2px;
-
+        font-weight: 500;
+        margin-left: 12px;
     }
 
     .hebergements {
@@ -780,7 +779,7 @@ h2 {
 
 
     .partie-activites {
-        margin-top: 60px;
+        margin-top: 25px;
     }
 
     .card h4 {
@@ -791,16 +790,30 @@ h2 {
 
     .activites h4 {
         padding: 20px;
-
+        padding-top: 5px;
     }
 
     .activites h2 {
         margin-bottom: 15px;
+
     }
 
-    /*********************************a changer car probleme***********************************/
     .populaires {
         padding: 20px;
+        padding-bottom: 32px;
+
+    }
+
+    .euro {
+
+        font-weight: bold;
+    }
+
+    .populaires-cards .card-subtitle {
+
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 500;
 
     }
 
@@ -808,22 +821,38 @@ h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 15px 10px 25px;
+        margin: 15px 15px 0px 25px;
     }
 
-
     .populaires-cards .card {
-
+        height: 145px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        width: 225px;
+        justify-content: center;
         align-items: stretch;
         align-content: stretch;
         margin: 10px;
+    }
 
+    .populaires-cards img {
+        width: 80%;
+        height: 135px;
+        border-radius: 20px 0 0 20px;
+        padding: 5px;
+        object-fit: cover;
 
+    }
 
+    .card-image {
+        height: 135px;
+        width: 40%;
+
+    }
+
+    .card-content {
+
+        width: 60%;
     }
 
     .populaires-cards {
@@ -835,25 +864,6 @@ h2 {
         align-content: stretch;
     }
 
-    .populaires-cards img {
-        width: 100%;
-        height: 125px;
-        border-radius: 20px 0 0 20px;
-        padding: 5px;
-        object-fit: cover;
-
-    }
-
-    .card-image {
-        width: 200px;
-
-    }
-
-    .card-content {
-
-        width: 60%;
-    }
-
     .populaires-cards .card-content {
 
         display: flex;
@@ -863,28 +873,42 @@ h2 {
 
     }
 
-    /************************* a changer car probleme******************************/
+    .card-txt {
 
-
-
-
-
-
-
-
-
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
 
     .populaires-cards .card-title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
         margin-top: 10px;
         margin-bottom: 4px;
+
     }
 
-    .populaires-cards .card-subtitle {
-        margin: 0;
-    }
+
+
 
     .populaires-cards .card-rating {
-        margin-bottom: 5px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        margin: 10px;
+        margin-left: 0px;
+        margin-bottom: 15px;
     }
 
 
@@ -904,8 +928,10 @@ h2 {
     }
 
     footer h4 {
+        margin-top: 16px;
+        margin-bottom: 0;
 
-        text-align: start;
+        font-size: 19px;
     }
 
 
@@ -916,19 +942,16 @@ h2 {
 
     .hotel-name {
         font-size: 16px;
-        margin-top: 0px;
+        margin-top: 5px;
+        margin-left: 12px;
     }
+
 
     .hotel-price {
         font-size: 14px;
         color: #000000;
     }
 
-    h3 {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
 
 
 
@@ -946,13 +969,14 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 112px;
+
     }
 
     /* bouton hebergement et activités */
 
     nav ul {
         display: flex;
+        margin: 0px;
     }
 
     ul {
@@ -968,13 +992,15 @@ h2 {
     nav li:hover {
         border-top: solid 2px #0065FC;
         cursor: pointer;
-        padding: 40px 30px;
+
         color: #0065FC;
     }
 
+
     nav li {
         border-top: solid 2px transparent;
-        padding: 40px 30px;
+        margin-left: 60px;
+        line-height: 55px;
     }
 
     .menu a {
@@ -1002,6 +1028,19 @@ h2 {
     .fa-solid,
     .fas {
         font-weight: 900;
+
+    }
+
+    .hotel-rating {
+        padding-top: 5px;
+        margin: 10px;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
     }
 
     .fa-location-dot {
@@ -1058,14 +1097,18 @@ h2 {
 
 
     .filtre i {
-        margin: 0 12px 0 20px;
+        margin-right: 10px;
         font-size: 22px;
     }
 
     .filtres {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+
         margin-bottom: 30px;
     }
 
@@ -1077,6 +1120,7 @@ h2 {
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+
     }
 
     .premier-double-bouton {
@@ -1100,17 +1144,27 @@ h2 {
     }
 
     .filtre {
-        margin-left: 40px;
+
         background-color: white;
         border-radius: 50px;
         border: solid 2px #D9D9D9;
+        padding: 11px;
+        margin-right: 15px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+
     }
 
     .filtre p {
-        font-size: 17px;
+
         font-weight: 700;
-        line-height: 20px;
-        margin-right: 20px;
+        margin: 0px;
+
     }
 
     .filtre:hover {
@@ -1125,10 +1179,10 @@ h2 {
     }
 
     .fa-info {
-        border: solid 1px #F2F2F2;
+        border: solid 2px #F2F2F2;
         border-radius: 50%;
-        padding: 5px 10px;
-        font-size: 10px;
+        padding: 5px 9px;
+        font-size: 12px;
         margin-right: 10px;
     }
 
@@ -1136,10 +1190,12 @@ h2 {
 
     .afficher-plus {
         display: block;
-        margin: 20px;
+        margin: 10px;
         font-size: 18px;
         text-decoration: none;
         font-weight: 600;
+        margin-left: 30px;
+        margin-bottom: 30px;
     }
 
 
@@ -1152,16 +1208,27 @@ h2 {
 
     footer {
         background-color: #F2F2F2;
-        margin-top: 60px;
-        padding: 15px;
+        margin-top: 50px;
+        padding-left: 20px;
+
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
     }
 
     footer div {
-        width: 200px;
-        height: 200px;
+        width: 100%
+    }
+
+
+
+    footer li {
+        white-space: nowrap;
+        margin-top: 15px;
+        font-size: 17px;
     }
 }
 
