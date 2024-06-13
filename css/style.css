@@ -272,7 +272,10 @@ h2 {
         margin: 10px 10px 10px 10px;
     }
 
+.populaires-title H2{
 
+    margin-bottom: 20px;
+}
 
 
 
@@ -702,7 +705,7 @@ h2 {
     .nombre-logement H3 {
 
         font-size: medium;
-        font-weight: 400;
+        font-weight: 500;
 
     }
 
@@ -886,6 +889,7 @@ h2 {
     .titre-partie-activites h2 {
 
         margin-left: 15px;
+        margin-bottom:25px;
     }
 
 
@@ -933,7 +937,7 @@ h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 15px 0px 25px;
+        margin: 10px 15px 15px 15px;
     }
 
     .populaires-cards .card {
@@ -1239,7 +1243,7 @@ h2 {
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: stretch;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         width: 78%;
     }
 
@@ -1293,7 +1297,7 @@ h2 {
     .information {
         display: flex;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .fa-info {
@@ -1320,7 +1324,7 @@ h2 {
     .nombre-logement H3 {
 
         font-size: medium;
-        font-weight: 400;
+        font-weight: 500;
 
     }
 
@@ -1455,7 +1459,7 @@ h2 {
 
         font-size: 22px;
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .texte-accueil p {
@@ -1650,7 +1654,7 @@ h2 {
     .nombre-logement H3 {
 
         font-size: medium;
-        font-weight: 400;
+        font-weight: 500;
         padding-right: 20px;
 
     }
@@ -1912,7 +1916,7 @@ h2 {
 
 
     .activites img {
-        height: 150px;
+        height: 130px;
         width: 100%;
         object-fit: cover;
         border-top-left-radius: 15px;
