@@ -40,7 +40,7 @@ a {
 
 }
 
-body  {
+body {
 
     margin: 0px;
 }
@@ -56,16 +56,6 @@ h2 {
 .titre-hebergements {
     padding: 20px 0 5px 40px;
 }
-
-.section-title {
-
-    font-size: 22px;
-    color: #000000;
-
-}
-
-
-
 
 
 .card {
@@ -272,10 +262,10 @@ h2 {
         margin: 10px 10px 10px 10px;
     }
 
-.populaires-title H2{
+    .populaires-title H2 {
 
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 
 
 
@@ -890,7 +880,7 @@ h2 {
     .titre-partie-activites h2 {
 
         margin-left: 15px;
-        margin-bottom:25px;
+        margin-bottom: 25px;
     }
 
 
@@ -1422,7 +1412,7 @@ h2 {
         justify-content: center;
         align-items: stretch;
         align-content: stretch;
-       
+
     }
 
     ul {
